@@ -493,6 +493,14 @@ h1,h2,h3,h4,h5,h6,p{
 		left:80px;
 	}
 	.jumbotron{height:300px;}
+}
+@media (max-width:320px){
+	.TopContent{
+		left:-10px;
+	}
+	.jumbotron .Info-1{
+		top:-30px;
+	}
 }	
 /*-------------------------
 /* $about
@@ -590,6 +598,11 @@ h1,h2,h3,h4,h5,h6,p{
 	}
 	.aboutContent .btn{margin-top:20px;}
 }
+@media (max-width:360px){
+	.aboutContent{
+		margin-top:30px;
+	}
+}
 /*-------------------------*/
 /* $menu
 ---------------------------*/
@@ -636,7 +649,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .juice img{
 	position: absolute;
-	max-width:40vh;
+	max-width:360px;
 	display:inline-block;
 	top:10%;
 	left:20%;
@@ -672,7 +685,7 @@ h1,h2,h3,h4,h5,h6,p{
 	padding-left:50px;
 }
 .tea img{
-	max-width:34vh;
+	max-width:300px;
 	position: absolute;
 	right:4%;
 	transition: all 1s ease;
@@ -694,7 +707,7 @@ h1,h2,h3,h4,h5,h6,p{
 	display: block;
 }
 .wine img{
-	max-width:36vh;
+	max-width:340px;
 	position: absolute;
 	top:-26%;
 	left:0;
@@ -737,7 +750,7 @@ h1,h2,h3,h4,h5,h6,p{
 @media (max-width:960px){
 	.drink .col-sm-6{width:100%;}
 	.juiceBg{left:-6%;}
-	.juice{height:400px;}
+	.juice,.tea,.wine{height:400px;}
 	.juiceText{
 		top:10%;
 		padding-right:50px;
@@ -765,13 +778,41 @@ h1,h2,h3,h4,h5,h6,p{
 		padding-right:16px;
 		padding-left:16px;
 	}
-	.juice img{top:8%;}
-	.tea img{top:-30%;}
-	.wine img{left:-10%;}
+	.juice img{
+		top:8%;
+		left:4%;
+	}
+	.tea img{top:-20%;}
+	.wine img{
+		left:-10%;
+		top:6%;
+	}
 }
 @media (max-width:375px){
 	.juiceTitle{
 		left:50%;
+	}
+}
+@media (max-width:326px){
+	.juiceTitle{
+		left:42%;
+		top:10%;
+	}
+	.juice,.tea,.wine{height:200px;}
+	.juiceText,.wineText,.teaText{
+		padding-top:20px;
+	}
+	.juice img,.tea img{
+		max-width:14vh;
+	}
+	.wine img{
+		max-width:18vh;
+		left:-6%;
+	}
+	.drinkTop{
+		left:-11%;
+		margin-bottom:0px;
+		margin-top:20px;
 	}
 }
 /*-------------------------*/
@@ -796,7 +837,7 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .hand img{
 	position: absolute;
-	max-width:60vh;
+	max-width:560px;
 	top:-50%;
 	left:-18%;
 }
@@ -939,6 +980,24 @@ hr{
 	}
 	.logo{display:block;}
 	.logo img{margin-top:60px;}
+}
+@media (max-width:414px){
+	.new-date{
+		top:-20px;
+	}
+	.method{
+		margin-left:auto;
+		margin-right:auto;
+	}
+}
+@media (max-width:326px){
+	.new-date{
+		top:8px;
+		left:-64%;
+	}
+	.method,.logo img{
+		max-width:246px;
+	}
 }
 /*-------------------------
 /* $Color 
